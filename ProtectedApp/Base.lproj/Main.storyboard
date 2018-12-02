@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ProtectedApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ProtectedApp" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y7A-Yz-rXX">
+                                <rect key="frame" x="71.5" y="60" width="177.5" height="39"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select option for securing app content while app switcher mode:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eYg-SO-m7G">
+                                <rect key="frame" x="20" y="129" width="280" height="30.5"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n5V-Cl-iYV">
+                                <rect key="frame" x="20" y="179.5" width="280" height="40"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Blackout screen without animation" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IA9-Q5-Hcz">
+                                        <rect key="frame" x="0.0" y="12.5" width="203.5" height="15.5"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="radiobtn_on" translatesAutoresizingMaskIntoConstraints="NO" id="zSw-Q1-zjw">
+                                        <rect key="frame" x="250" y="10" width="20" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="zSw-Q1-zjw" secondAttribute="height" multiplier="1:1" id="6fj-vL-sOf"/>
+                                            <constraint firstAttribute="width" constant="20" id="LqK-t2-1uQ"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xp1-jR-Elk">
+                                        <rect key="frame" x="0.0" y="0.0" width="280" height="40"/>
+                                        <inset key="imageEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <connections>
+                                            <action selector="onValueChange:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qdv-UJ-u8c"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="IA9-Q5-Hcz" firstAttribute="leading" secondItem="n5V-Cl-iYV" secondAttribute="leading" id="1kA-Ow-Sd9"/>
+                                    <constraint firstAttribute="trailing" secondItem="xp1-jR-Elk" secondAttribute="trailing" id="ANk-7C-Kfe"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="IA9-Q5-Hcz" secondAttribute="trailing" constant="40" id="NaV-HK-mDh"/>
+                                    <constraint firstItem="zSw-Q1-zjw" firstAttribute="centerY" secondItem="n5V-Cl-iYV" secondAttribute="centerY" id="XG9-5L-OdQ"/>
+                                    <constraint firstItem="IA9-Q5-Hcz" firstAttribute="centerY" secondItem="n5V-Cl-iYV" secondAttribute="centerY" id="d7t-H6-Onn"/>
+                                    <constraint firstItem="xp1-jR-Elk" firstAttribute="leading" secondItem="n5V-Cl-iYV" secondAttribute="leading" id="gJi-Wt-TYm"/>
+                                    <constraint firstItem="xp1-jR-Elk" firstAttribute="top" secondItem="n5V-Cl-iYV" secondAttribute="top" id="gkr-ZK-gCe"/>
+                                    <constraint firstAttribute="trailing" secondItem="zSw-Q1-zjw" secondAttribute="trailing" constant="10" id="jh5-fO-Pa5"/>
+                                    <constraint firstAttribute="bottom" secondItem="xp1-jR-Elk" secondAttribute="bottom" id="kz1-36-3AG"/>
+                                    <constraint firstAttribute="height" constant="40" id="tal-TL-wdx"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YuF-7d-ZVy">
+                                <rect key="frame" x="20" y="239.5" width="280" height="40"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Blackout screen with animation" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="esl-Id-y6s">
+                                        <rect key="frame" x="0.0" y="12.5" width="184" height="15.5"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="radiobtn_off" translatesAutoresizingMaskIntoConstraints="NO" id="sYi-J3-o71">
+                                        <rect key="frame" x="250" y="10" width="20" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="20" id="qga-Ui-9a5"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dTZ-qE-Nzd">
+                                        <rect key="frame" x="0.0" y="0.0" width="280" height="40"/>
+                                        <inset key="imageEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <connections>
+                                            <action selector="onValueChange:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xzc-xg-ckG"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="sYi-J3-o71" secondAttribute="trailing" constant="10" id="5Y8-DG-GgD"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="esl-Id-y6s" secondAttribute="trailing" constant="40" id="5nA-Ya-V5R"/>
+                                    <constraint firstAttribute="height" constant="40" id="7lC-T1-YOr"/>
+                                    <constraint firstItem="dTZ-qE-Nzd" firstAttribute="leading" secondItem="YuF-7d-ZVy" secondAttribute="leading" id="Iqs-cc-fI3"/>
+                                    <constraint firstItem="dTZ-qE-Nzd" firstAttribute="top" secondItem="YuF-7d-ZVy" secondAttribute="top" id="Lgo-vF-XoX"/>
+                                    <constraint firstAttribute="bottom" secondItem="dTZ-qE-Nzd" secondAttribute="bottom" id="Oj3-lt-VOi"/>
+                                    <constraint firstItem="esl-Id-y6s" firstAttribute="leading" secondItem="YuF-7d-ZVy" secondAttribute="leading" id="Sza-aF-L2C"/>
+                                    <constraint firstItem="esl-Id-y6s" firstAttribute="centerY" secondItem="YuF-7d-ZVy" secondAttribute="centerY" id="UOI-8k-TSQ"/>
+                                    <constraint firstItem="sYi-J3-o71" firstAttribute="centerY" secondItem="YuF-7d-ZVy" secondAttribute="centerY" id="eTI-E1-J42"/>
+                                    <constraint firstAttribute="trailing" secondItem="dTZ-qE-Nzd" secondAttribute="trailing" id="kk7-3q-0Q9"/>
+                                    <constraint firstItem="sYi-J3-o71" firstAttribute="width" secondItem="sYi-J3-o71" secondAttribute="height" multiplier="1:1" id="t6O-LI-wgK"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9bE-eh-rkl">
+                                <rect key="frame" x="20" y="299.5" width="280" height="40"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Display Some Image" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NBd-3k-GFp">
+                                        <rect key="frame" x="0.0" y="12.5" width="109.5" height="15.5"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="radiobtn_off" translatesAutoresizingMaskIntoConstraints="NO" id="mJL-fy-30d">
+                                        <rect key="frame" x="250" y="10" width="20" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="20" id="IQH-lp-Tfl"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tNj-68-APK">
+                                        <rect key="frame" x="0.0" y="0.0" width="280" height="40"/>
+                                        <inset key="imageEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <connections>
+                                            <action selector="onValueChange:" destination="BYZ-38-t0r" eventType="touchUpInside" id="U79-ak-ajZ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="NBd-3k-GFp" secondAttribute="trailing" constant="40" id="4Il-YM-B4z"/>
+                                    <constraint firstItem="mJL-fy-30d" firstAttribute="width" secondItem="mJL-fy-30d" secondAttribute="height" multiplier="1:1" id="6ER-I4-7RM"/>
+                                    <constraint firstAttribute="bottom" secondItem="tNj-68-APK" secondAttribute="bottom" id="7Ic-eQ-teK"/>
+                                    <constraint firstItem="mJL-fy-30d" firstAttribute="centerY" secondItem="9bE-eh-rkl" secondAttribute="centerY" id="JV7-54-otY"/>
+                                    <constraint firstItem="NBd-3k-GFp" firstAttribute="centerY" secondItem="9bE-eh-rkl" secondAttribute="centerY" id="JvS-zS-MFA"/>
+                                    <constraint firstItem="tNj-68-APK" firstAttribute="leading" secondItem="9bE-eh-rkl" secondAttribute="leading" id="K4k-Od-oqY"/>
+                                    <constraint firstAttribute="height" constant="40" id="Nd5-dk-mce"/>
+                                    <constraint firstItem="tNj-68-APK" firstAttribute="top" secondItem="9bE-eh-rkl" secondAttribute="top" id="R3c-Eg-qQ8"/>
+                                    <constraint firstAttribute="trailing" secondItem="tNj-68-APK" secondAttribute="trailing" id="XdR-En-xGI"/>
+                                    <constraint firstItem="NBd-3k-GFp" firstAttribute="leading" secondItem="9bE-eh-rkl" secondAttribute="leading" id="ncA-RB-tEq"/>
+                                    <constraint firstAttribute="trailing" secondItem="mJL-fy-30d" secondAttribute="trailing" constant="10" id="rd9-Mu-J1W"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YuF-7d-ZVy" secondAttribute="trailing" constant="20" id="1d6-CM-BMj"/>
+                            <constraint firstItem="eYg-SO-m7G" firstAttribute="top" secondItem="Y7A-Yz-rXX" secondAttribute="bottom" constant="30" id="CcE-TS-Uss"/>
+                            <constraint firstItem="9bE-eh-rkl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Eb3-MS-Kl5"/>
+                            <constraint firstItem="YuF-7d-ZVy" firstAttribute="top" secondItem="n5V-Cl-iYV" secondAttribute="bottom" constant="20" id="Ivb-UB-ao9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eYg-SO-m7G" secondAttribute="trailing" constant="20" id="M9v-Tx-jCx"/>
+                            <constraint firstItem="Y7A-Yz-rXX" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Roy-Py-ImU"/>
+                            <constraint firstItem="Y7A-Yz-rXX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="U7S-Y8-HTc"/>
+                            <constraint firstItem="9bE-eh-rkl" firstAttribute="top" secondItem="YuF-7d-ZVy" secondAttribute="bottom" constant="20" id="aCr-NN-cSk"/>
+                            <constraint firstItem="eYg-SO-m7G" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="eg0-gL-gu5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9bE-eh-rkl" secondAttribute="trailing" constant="20" id="j0a-se-oQd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="n5V-Cl-iYV" secondAttribute="trailing" constant="20" id="jbi-Aq-pEX"/>
+                            <constraint firstItem="n5V-Cl-iYV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="tdt-g0-PjY"/>
+                            <constraint firstItem="n5V-Cl-iYV" firstAttribute="top" secondItem="eYg-SO-m7G" secondAttribute="bottom" constant="20" id="uBC-HZ-ej5"/>
+                            <constraint firstItem="YuF-7d-ZVy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="xvy-13-e7u"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="firstOptionIcon" destination="zSw-Q1-zjw" id="ESi-5I-KAw"/>
+                        <outlet property="secondOptionIcon" destination="sYi-J3-o71" id="Bcz-Vb-FQc"/>
+                        <outlet property="thirdOptionIcon" destination="mJL-fy-30d" id="XMe-ao-9jN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="radiobtn_off" width="41" height="41"/>
+        <image name="radiobtn_on" width="41" height="41"/>
+    </resources>
+</document>
